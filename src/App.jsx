@@ -1,8 +1,10 @@
+import { Header } from './components/Header'
+import "./main.css"
 
 function App() {
 
   return (
-    <p>hello</p>
+    <Header />
   )
 }
 
