@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{html,jsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -9,8 +10,8 @@ module.exports = {
         },
         secondary: {
           dark: "#1F4068",
-          light:  "#DFD3C3"
-        }        
+          light: "#DFD3C3"
+        }
       }
     },
   },
