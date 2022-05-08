@@ -1,16 +1,14 @@
 import { MoonStars } from "phosphor-react"
 
-export function ThemeButton({ changeTheme }) {
+export function ThemeButton() {
 
   function changeTheme() {
-    console.log('changeTheme');
     document.querySelector('html').classList.toggle('dark');
-
-    localStorage.getItem('color-theme') === 'dark' ? localStorage.setItem('color-theme', '') : localStorage.setItem('color-theme', 'dark');
   }
 
   return (
     <button onClick={changeTheme}>
+      <MoonStars size="30px" weight="thin" className="text-zinc-700  dark:text-slate-400 dark:hover:text-slate-200 hover:text-zinc-900 transition-colors" />
     </button>
   )
 }
