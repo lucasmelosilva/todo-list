@@ -1,6 +1,8 @@
 import { FloppyDisk, X } from "phosphor-react";
 
-export function NewCard() {
+export function NewCard({
+  handleNewCard
+}) {
   return (
     <form className='w-[90%] md:w-[50em] dark:bg-gray-800 bg-zinc-300 rounded-xl p-2 z-10 absolute top-24 md:top-40 right-1/2 translate-x-1/2'>
       <div className='flex items-center justify-between mb-3'>
@@ -12,7 +14,7 @@ export function NewCard() {
           <button tyoe="submit" className="p-2 mr-1">
             <FloppyDisk weight="thin" size="2em" className="text-zinc-700 dark:text-slate-400 dark:hover:text-slate-200 hover:text-zinc-900 transition-colors" />
           </button>
-          <button type='button' className="p-2">
+          <button type='button' className="p-2" onClick={handleNewCard}>
             <X weight="thin" size="2em" className="text-zinc-700 dark:text-slate-400 dark:hover:text-slate-200 hover:text-zinc-900 transition-colors" />
           </button>
         </div>
