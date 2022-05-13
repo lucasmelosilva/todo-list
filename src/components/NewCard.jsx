@@ -2,7 +2,7 @@ import { FloppyDisk, X } from "phosphor-react";
 
 export function NewCard() {
   return (
-    <form className='w-[90%] md:w-[50em] dark:bg-gray-800 bg-zinc-300 rounded-xl p-2 z-10 absolute top-52 right-1/2 translate-x-1/2'>
+    <form className='w-[90%] md:w-[50em] dark:bg-gray-800 bg-zinc-300 rounded-xl p-2 z-10 absolute top-24 md:top-40 right-1/2 translate-x-1/2'>
       <div className='flex items-center justify-between mb-3'>
 
 
