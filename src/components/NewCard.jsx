@@ -4,11 +4,11 @@ export function NewCard({
   handleNewCard
 }) {
   return (
-    <form className='w-[90%] md:w-[50em] dark:bg-gray-800 bg-zinc-300 rounded-xl p-2 z-10 fixed top-24 md:top-40 right-1/2 translate-x-1/2'>
+    <form className='w-[90%] md:w-[50em] dark:bg-gray-800 bg-slate-200 rounded-xl p-2 z-10 fixed top-24 md:top-40 right-1/2 translate-x-1/2'>
       <div className='flex items-center justify-between mb-3'>
 
 
-        <input type="text" className="p-2 text-[.8em]  md:text-xl w-[15em] text-zinc-700 dark:bg-gray-600 rounded-md" />
+        <input type="text" className="p-2 text-[.8em]  md:text-xl w-[15em] text-zinc-700 bg-slate-100 dark:bg-gray-600 rounded-md" />
 
         <div>
           <button tyoe="submit" className="p-2 mr-1">
@@ -22,7 +22,7 @@ export function NewCard({
       </div>
 
       <div className="w-[100%]">
-        <textarea className="w-full p-3 text-xl text-zinc-700 dark:bg-gray-600 dark:text-slate-200 rounded-md" cols="20" rows="10"></textarea>
+        <textarea className="w-full p-3 text-xl text-zinc-700 bg-slate-100 dark:bg-gray-600 dark:text-slate-200 rounded-md" cols="20" rows="10"></textarea>
       </div>
     </form>
   )
