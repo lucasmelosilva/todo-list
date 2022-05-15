@@ -5,7 +5,7 @@ import { Main } from '../components/Main';
 import { Footer } from '../components/Footer';
 
 
-function ToDOList() {
+function ToDoList() {
 
   return (
     <>
@@ -18,4 +18,4 @@ function ToDOList() {
   )
 }
 
-export default ToDOList
+export default ToDoList
