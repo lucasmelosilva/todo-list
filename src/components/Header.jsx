@@ -1,5 +1,4 @@
 import { SignOut, UserCircle } from "phosphor-react";
-import { ThemeButton } from './ThemeButton';
 
 export function Header() {
   return (
