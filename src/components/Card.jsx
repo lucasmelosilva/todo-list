@@ -2,7 +2,7 @@ import { Trash } from 'phosphor-react'
 
 export function Card({ title, content }) {
   return (
-    <div className='w-52 bg-yellow-300 rounded-xl p-2'>
+    <div className='w-52 bg-yellow-500 rounded-xl p-2'>
       <div className='flex items-center justify-between mb-3'>
         <h2>{title}</h2>
 
