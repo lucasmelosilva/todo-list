@@ -1,6 +1,6 @@
 import "./main.css";
 import Login from "./pages/Login";
-import ToDoList from "./pages/ToDo";
+import Home from "./pages/Home";
 
 function App() {
   return (
