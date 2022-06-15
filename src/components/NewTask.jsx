@@ -6,9 +6,6 @@ function NewTask({ handleNewTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (task.length === 0) return;
-
     handleNewTask(task);
     setTask('');
   }
@@ -22,7 +19,7 @@ function NewTask({ handleNewTask }) {
         onChange={(e) => setTask(e.target.value)}
       />
 
-      <button type='submit' onClick={handleSubmit} className="bg-gray-800 rounded-md p-3">
+      <button type='submit' onClick={handleSubmit} className="bg-gray-800 rounded-md p-3" disabled={task.length === 0}>
         <FloppyDisk size="2rem" className="text-slate-700 hover:text-slate-500  transition-colors" />
       </button>
     </form>

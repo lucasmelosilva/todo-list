@@ -5,11 +5,22 @@ import { NewTask } from './NewTask';
 import { NothingToDo } from './NothingToDo';
 
 export function Main() {
-  const [tasks, setTasks] = useState([{ status: 'done', content: 'make dinner' }, { status: 'todo', content: 'make breakfast' }]);
+  const [tasks, setTasks] = useState([{ status: 'done', content: 'make dinner' }, { status: 'progress', content: 'make breakfast' }]);
 
   function handleNewTask(newTask) {
-    setTasks([...tasks, newTask]);
+    setTasks([...tasks, { status: 'progress', content: newTask }]);
     console.log(tasks);
+  }
+
+  function handleStatusChange(index) {
+    let changedTask = { ...tasks[index] };
+    tasks[index].status === 'progress' ? changedTask = { ...changedTask, status: 'done' } : changedTask = { ...changedTask, status: 'progress' };
+
+    setTasks([...tasks.slice(0, index), changedTask, ...tasks.slice(index + 1)]);
+  }
+
+  function deleteTask(index) {
+    setTasks([...tasks.slice(0, index), ...tasks.slice(index + 1)]);
   }
   return (
     <div className='mt-[80px] mb-[80px]'>
@@ -18,7 +29,11 @@ export function Main() {
         tasks.length === 0 ? (
           <NothingToDo />
         ) : (
-          <ListTask tasks={tasks} />
+          <ListTask
+            tasks={tasks}
+            handleStatusChange={handleStatusChange}
+            handleDelete={deleteTask}
+          />
         )
       }
 
