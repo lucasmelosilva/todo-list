@@ -6,6 +6,9 @@ function NewTask({ handleNewTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (task.length === 0) return;
+
     handleNewTask(task);
     setTask('');
   }
