@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
 import { ListTask } from './ListTask';
-import { ButtonNewTask } from './ButtonNewTask';
+import { NewTask } from './NewTask';
+import { NothingToDo } from './NothingToDo';
 
 export function Main() {
-  const [tasks, setTasks] = useState(['estudar ingles']);
+  const [tasks, setTasks] = useState([{ status: 'done', content: 'make dinner' }, { status: 'todo', content: 'make breakfast' }]);
 
   function handleNewTask(newTask) {
     setTasks([...tasks, newTask]);
@@ -12,8 +13,16 @@ export function Main() {
   }
   return (
     <div className='mt-[80px] mb-[80px]'>
-      <ButtonNewTask handleNewTask={handleNewTask} />
-      <ListTask />
+
+      {
+        tasks.length === 0 ? (
+          <NothingToDo />
+        ) : (
+          <ListTask tasks={tasks} />
+        )
+      }
+
+      <NewTask handleNewTask={handleNewTask} />
     </div>
   )
 
