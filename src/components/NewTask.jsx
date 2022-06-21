@@ -11,7 +11,7 @@ function NewTask({ handleNewTask }) {
   }
 
   return (
-    <form className={`flex gap-2 items-center`} >
+    <form className={`w-[90%] md:w-[80%] bottom-[90px] flex gap-2 items-center absolute`} >
       <input
         type="text"
         className="bg-gray-800 p-3 flex-grow rounded-md text-2xl text-slate-500"
