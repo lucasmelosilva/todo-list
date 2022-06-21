@@ -23,7 +23,7 @@ export function Main() {
     setTasks([...tasks.slice(0, index), ...tasks.slice(index + 1)]);
   }
   return (
-    <div className='mt-[80px] mb-[80px]'>
+    <div className='w-[90%] md:w-[80%] mt-[100px] mb-[80px] mx-auto'>
 
       {
         tasks.length === 0 ? (

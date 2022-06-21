@@ -2,7 +2,7 @@ import { Task } from "./Task"
 
 function ListTask({ tasks, handleStatusChange, handleDelete }) {
   return (
-    <div className='w-full flex flex-col  gap-2 p-4'>
+    <div className='w-full flex flex-col  gap-2'>
 
       {
         tasks.map(({ status, content }, index) => {
