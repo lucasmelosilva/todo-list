@@ -30,13 +30,6 @@ function Login() {
           Entrar com
           <GoogleLogo weight="bold" className="ml-4" />
         </button>
-
-        <p className="text-gray-600 mt-3 mb-3">ou</p>
-
-        <button className="bg-slate-700 text-xl text-slate-400 font-bold p-3 rounded-md w-64 flex justify-center items-center">
-          Entrar com
-          <GithubLogo weight="bold" className="ml-4" />
-        </button>
       </div>
     </div>
   )
