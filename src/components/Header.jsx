@@ -2,7 +2,7 @@ import { SignOut, UserCircle } from "phosphor-react";
 
 export function Header() {
   return (
-    <header className="w-full py-4 bg-gray-800 flex fixed top-0 items-center justify-center">
+    <header className="w-screen py-4 bg-gray-800 flex fixed top-0 items-center justify-center">
       <div className="w-[90%] md:w-[80%]  bg-gray-800 flex items-center justify-between">
         <div className="flex items-center">
           <UserCircle size="48px" weight="thin" className="text-slate-400" />

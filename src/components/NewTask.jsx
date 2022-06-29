@@ -11,10 +11,10 @@ function NewTask({ handleNewTask }) {
   }
 
   return (
-    <form className={`w-[90%] md:w-[80%] bottom-[90px] flex gap-2 items-center absolute`} >
+    <form className="w-[90%] md:w-[80%] mx-auto flex gap-2 items-center " >
       <input
         type="text"
-        className="bg-gray-800 p-3 flex-grow rounded-md text-2xl text-slate-500"
+        className="bg-gray-800 p-3 py-[16px] flex-grow rounded-md text-slate-500"
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
